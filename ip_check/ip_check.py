@@ -23,11 +23,12 @@ def ip_check(ip_addr):
     except Exception as e:
         return False
 
-    if ((ip_addr[0] >= 1 and ip_addr[0] <= 255) and 
+    if ((ip_addr[0] >= 0 and ip_addr[0] <= 255) and 
         (ip_addr[1] >= 0 and ip_addr[1] <= 255) and
         (ip_addr[2] >= 0 and ip_addr[2] <= 255) and
         (ip_addr[3] >= 0 and ip_addr[3] <= 255)):
         return True
+        
     return False
 
 
